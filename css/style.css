@@ -112,12 +112,11 @@ tr:nth-child(even) {
   background-color: #D1D1D1;
 }
 
-
 tr:nth-child(odd) {
   background-color: transparent;
 }
 
-tr:hover {
+tbody tr:hover {
   background-color: rgba(126,8,37,.25);
 }
 
@@ -132,7 +131,7 @@ thead tr:last-child th:last-child{
   border-top-right-radius: 50px;
 }
 
-tbody tr th.rowhead{
+tbody tr:last-child th:first-child {
   border-bottom-left-radius: 50px;
 }
 
