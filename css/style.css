@@ -70,12 +70,10 @@ td{
   text-align: center;
   vertical-align: middle;
   padding: 10px;
-  border-color: #00000;
-  border-width: 2px;
   border-right: none;
   border-left: none;
   border-bottom: none;
-  border-top: solid;
+  border-top: 2px solid #000000;
 }
 
 
@@ -86,24 +84,27 @@ td{
   padding: 10px;
   background-color: #7e0825;
   min-width: 125px;
+  text-transform: uppercase;
 
 
 }
 
 .rowhead{
-  border-color: #00000;
-  border-width: 2px;
-  border-right: solid;
-  border-top: solid;
+  border-right: 2px solid #000000;
+  border-top: 2px solid #000000;
+  border-bottom: none;
   vertical-align: middle; 
   text-align: center;
 }
-
 
 table{
     border: 5px solid #000000;
     margin-left: auto;
     margin-right: auto;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 
 }
 
@@ -111,12 +112,13 @@ tr:nth-child(even) {
   background-color: #D1D1D1;
 }
 
+
 tr:nth-child(odd) {
   background-color: transparent;
 }
 
 tr:hover {
-  background-color: rgba(126,8,37,.25) !important;
+  background-color: rgba(126,8,37,.25);
 }
 
 
@@ -130,19 +132,13 @@ thead tr:last-child th:last-child{
   border-top-right-radius: 50px;
 }
 
-
-tr:last-child tr th:first-child{
+tbody tr th.rowhead{
   border-bottom-left-radius: 50px;
 }
 
-tr:last-child tr th:last-child{
+tbody tr:last-child td:last-child{
   border-bottom-right-radius: 50px;
 }
-
-/*thead tr:first-child tbody tr td:last-child {
-  border-bottom-left-radius: 50px;
-}*/
-
 
 /*Add selectors and rules here*/
 
@@ -154,5 +150,8 @@ footer{
   text-align:center;
   color: #FFFFFF;
   min-height: 75px;
-  margin-bottom: -100px;
+  position: fixed;
+  right: 0;
+  bottom:0%;
+  left:0;
 }
